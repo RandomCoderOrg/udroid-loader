@@ -1,0 +1,22 @@
+{
+    "de": {
+        "xfce4": {
+            "name": "xfsmooth",
+            "description": "mac os finish on xfce4",
+            "version": "v02-xfce4",
+            "enabled": true
+        },
+        "mate": {
+            "name": "mate",
+            "desktop": "pretty good themed mate with gonme like look",
+            "version": "v01-mate",
+            "enabled": true
+        },
+        "kde": {
+            "name": "kde",
+            "desktop": "-",
+            "version": "-",
+            "enabled": false
+        }
+    }
+}
