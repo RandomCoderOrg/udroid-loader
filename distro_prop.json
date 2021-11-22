@@ -44,12 +44,12 @@
             }
         },
         "ubuntu21_10": {
-            "enabled": true,
+            "enabled": false,
             "de": {
                 "xfce4": {
                     "name": "xfsmooth",
                     "description": "mac os finish on xfce4",
-                    "version": "v02-xfce4",
+                    "version": "",
                     "download_size": "",
                     "install_size": "",
                     "enabled": true
@@ -57,7 +57,7 @@
                 "mate": {
                     "name": "mate",
                     "description": "pretty good themed mate with gonme like look",
-                    "version": "v01-mate",
+                    "version": "",
                     "download_size": "",
                     "install_size": "",
                     "enabled": true
@@ -73,7 +73,7 @@
                 "no_DE": {
                     "name": "minimal filesystem()",
                     "description": "-",
-                    "version": "v02-raw",
+                    "version": "",
                     "download_size": "",
                     "install_size": "",
                     "enabled": true
