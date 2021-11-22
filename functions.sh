@@ -12,8 +12,8 @@ export SCREEN_SIZE
 HEIGHT_FULL=$(stty size | cut -d ' ' -f 1)
 WIDTH_FULL=$(stty size | cut -d ' ' -f 2)
 
-HEIGHT=$((HEIGHT_FULL - 6))
-WIDTH=$((WIDTH_FULL - 6))
+HEIGHT=$((HEIGHT_FULL - 16))
+WIDTH=$((WIDTH_FULL - 16))
 
 depends_on() {
     local packages="$1"
@@ -68,7 +68,11 @@ generate_menu() {
         done
 
         DIS_CHOICE=$(
-            whiptail --title "${title}" --menu "${menu_title}" $HEIGHT $WIDTH ${x} ${buffer} 3>&1 1>&2 2>&3
+            whiptail \
+            --title "${title}" \
+            --menu "${menu_title}" \
+            $HEIGHT $WIDTH ${x} \
+            ${buffer} 3>&1 1>&2 2>&3
         )
     fi
 
@@ -96,7 +100,11 @@ generate_de_menu() {
         done
 
         DE_CHOICE=$(
-            whiptail --title "${title}" --menu "${menu_title}" $HEIGHT $WIDTH ${x} ${buffer} 3>&1 1>&2 2>&3
+            whiptail \
+            --title "${title}" \
+            --menu "${menu_title}" \
+            $HEIGHT $WIDTH ${x} \
+            ${buffer} 3>&1 1>&2 2>&3
         )
     fi
 
