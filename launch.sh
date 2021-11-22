@@ -9,7 +9,7 @@ x=0
 source "${ROOT_DIR}"/functions.sh
 
 # depencies check
-dpkg_depends_on "whiptail jq"
+depends_on "whiptail jq"
 
 # get distribution choice
 CONF_FILE="$ROOT_DIR/distro_prop.json"
